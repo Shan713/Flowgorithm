@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="shant"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-04 10:17:46 AM"/>
+        <attribute name="created" value="c2hhbnQ7U0hBTkNPTVBVVEVSOzIwMjMtMDktMDQ7MDk6NTk6MTAgQU07MjczNg=="/>
+        <attribute name="edited" value="c2hhbnQ7U0hBTkNPTVBVVEVSOzIwMjMtMDktMDQ7MTA6MTc6NDYgQU07MTsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Enter the degree of polynomial&quot;" newline="True"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <if expression="n&gt;0">
+                <then>
+                    <declare name="Coeff" type="Integer" array="True" size="n+1"/>
+                    <declare name="y, x, o" type="Real" array="False" size=""/>
+                    <assign variable="y" expression="0"/>
+                    <declare name="m" type="Integer" array="False" size=""/>
+                    <output expression="&quot;Enter the value of x&quot;" newline="True"/>
+                    <input variable="x"/>
+                    <for variable="m" start="0" end="n" direction="inc" step="1">
+                        <output expression="&quot;Enter the &quot;&amp;m&amp;&quot; power coefficient&quot;" newline="True"/>
+                        <input variable="Coeff[m]"/>
+                    </for>
+                    <for variable="o" start="0" end="n" direction="inc" step="1">
+                        <assign variable="y" expression="y+Coeff[o]*x^o"/>
+                    </for>
+                    <output expression="&quot;The answer is  &quot; &amp;y" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Start from the beginning&quot;" newline="True"/>
+                    <call expression="Main"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

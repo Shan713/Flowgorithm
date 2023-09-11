@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="shant"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-11 02:51:29 PM"/>
+        <attribute name="created" value="c2hhbnQ7U0hBTkNPTVBVVEVSOzIwMjMtMDktMTE7MDI6NDc6MzkgUE07Mjc1MA=="/>
+        <attribute name="edited" value="c2hhbnQ7U0hBTkNPTVBVVEVSOzIwMjMtMDktMTE7MDI6NTE6MjkgUE07MTsyODUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter two integers&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <output expression="a" newline="True"/>
+                </then>
+                <else>
+                    <output expression="b" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

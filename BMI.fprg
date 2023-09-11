@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="shant"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-11 02:28:08 PM"/>
+        <attribute name="created" value="c2hhbnQ7U0hBTkNPTVBVVEVSOzIwMjMtMDktMTE7MDI6MTE6NTQgUE07MjczOA=="/>
+        <attribute name="edited" value="c2hhbnQ7U0hBTkNPTVBVVEVSOzIwMjMtMDktMTE7MDI6Mjg6MDggUE07MTsyODUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="H, W, BMI" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the Height in Inches.&quot;" newline="True"/>
+            <input variable="H"/>
+            <assign variable="H" expression="H*2.54"/>
+            <output expression="&quot;Enter your Weight in Kilograms&quot;" newline="True"/>
+            <input variable="W"/>
+            <assign variable="BMI" expression="W^2/H"/>
+            <output expression="&quot;Your Body Mass Index is &quot; &amp; BMI" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

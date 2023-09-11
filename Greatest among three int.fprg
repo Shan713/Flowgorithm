@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="shant"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-11 02:47:30 PM"/>
+        <attribute name="created" value="c2hhbnQ7U0hBTkNPTVBVVEVSOzIwMjMtMDktMTE7MDI6NDA6MjUgUE07MjczOA=="/>
+        <attribute name="edited" value="c2hhbnQ7U0hBTkNPTVBVVEVSOzIwMjMtMDktMTE7MDI6NDc6MzAgUE07MTsyODQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter three integers&quot;" newline="True"/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <if expression="A&gt;B">
+                <then>
+                    <if expression="A&gt;C">
+                        <then>
+                            <output expression="&quot;The greatest integer is &quot; &amp; A" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;The greatest integer is &quot; &amp; C" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="B&gt;C">
+                        <then>
+                            <output expression="&quot;The greatest integer is &quot; &amp; B" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;The greatest integer is &quot; &amp; C" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

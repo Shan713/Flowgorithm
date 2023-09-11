@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="shant"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-04 09:40:55 AM"/>
+        <attribute name="created" value="c2hhbnQ7U0hBTkNPTVBVVEVSOzIwMjMtMDktMDQ7MDg6NDE6MDcgQU07MjczMg=="/>
+        <attribute name="edited" value="c2hhbnQ7U0hBTkNPTVBVVEVSOzIwMjMtMDktMDQ7MDk6NDA6NTUgQU07MjsyODQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, Coeff1, Coeff2, Coeff3, Coeff4, Coeff5, Const" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the value of Coeff1&quot;" newline="True"/>
+            <input variable="Coeff1"/>
+            <output expression="&quot;Enter the value of Coeff2&quot;" newline="True"/>
+            <input variable="Coeff2"/>
+            <output expression="&quot;Enter the value of Coeff3&quot;" newline="True"/>
+            <input variable="Coeff3"/>
+            <output expression="&quot;Enter the value of Coeff4&quot;" newline="True"/>
+            <input variable="Coeff4"/>
+            <output expression="&quot;Enter the value of Coeff5&quot;" newline="True"/>
+            <input variable="Coeff5"/>
+            <output expression="&quot;Enter the value of Const&quot;" newline="True"/>
+            <input variable="Const"/>
+            <output expression="&quot;Enter the value of x&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="y" expression="Coeff1*x^5+ Coeff2*x^4+ Coeff3*x^3+ Coeff4*x^2+ Coeff5*x^1+ Const"/>
+            <if expression="y&gt;=10000">
+                <then>
+                    <output expression="&quot;The answer is  &quot;&amp;y" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Try entering higher values&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
